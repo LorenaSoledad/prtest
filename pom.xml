@@ -72,4 +72,26 @@
       </plugins>
     </pluginManagement>
   </build>
+
+  <repositories>
+    <!--
+        This repository definition is redundant as it's already present in the
+        parent pom.
+
+        However, when building the Enterprise modules with an empty local repository
+        for the first time, the build *has* to know where to get its parent from and
+        there's no way around this repo definition.
+    -->
+    <repository>
+        <id>mule-ee-snapshots</id>
+        <name>Internal Release Repo</name>
+        <url>https://repository.mulesoft.org/nexus/content/repositories/ci-snapshots/</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+</repositories>
 </project>
