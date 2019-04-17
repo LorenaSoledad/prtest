@@ -97,10 +97,10 @@
 
 <distributionManagement>
     <downloadUrl>http://www.mulesoft.com/mule-esb-enterprise-trial-download</downloadUrl>
-    <snapshotRepository>
+    <repository>
         <id>mule-ee-snapshots</id>
         <name>Mule Snapshot Repository</name>
         <url>https://repository-master.mulesoft.org/nexus/content/repositories/ci-snapshots</url>
-    </snapshotRepository>
+    </repository>
 </distributionManagement>
 </project>
